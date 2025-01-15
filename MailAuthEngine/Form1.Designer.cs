@@ -91,7 +91,7 @@
             this.label6.Size = new System.Drawing.Size(129, 24);
             this.label6.TabIndex = 4;
             this.label6.Text = "Şifre Tekrarı:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            //this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // TxtAd
             // 
@@ -159,6 +159,7 @@
             this.BtnRegister.TabIndex = 11;
             this.BtnRegister.Text = "Kayıt Yap";
             this.BtnRegister.UseVisualStyleBackColor = false;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // Form1
             // 
