@@ -42,7 +42,7 @@ namespace MailAuthEngine
             MimeMessage mimeMessage = new MimeMessage();
 
 
-            MailboxAddress mailboxAddressFrom = new MailboxAddress("AdminRegister", "Mail adresi");
+            MailboxAddress mailboxAddressFrom = new MailboxAddress("AdminRegister", "emresefer53@outlook.com");
             mimeMessage.From.Add(mailboxAddressFrom);
 
             MailboxAddress mailboxAddressTo = new MailboxAddress("User", TxtEmail.Text);
@@ -56,7 +56,7 @@ namespace MailAuthEngine
 
             MailKit.Net.Smtp.SmtpClient smtpClient = new MailKit.Net.Smtp.SmtpClient();
             smtpClient.Connect("smtp.gmail.com", 587, false);
-            smtpClient.Authenticate("maik", "key");
+            smtpClient.Authenticate("emresefer53@outlook.com", "YunusEmre53");
             smtpClient.Send(mimeMessage);
             smtpClient.Disconnect(true);
 
@@ -66,8 +66,6 @@ namespace MailAuthEngine
             frm.Show();
 
             #endregion
-
-
         }
     }
 }
