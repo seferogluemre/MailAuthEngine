@@ -1,1 +1,1 @@
-C# Entity-framework account-mail activation app
+C# Entity-framework account-mail activation 
